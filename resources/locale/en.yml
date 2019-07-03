@@ -61,6 +61,9 @@ flagrow-upload:
       download_label: Download files
       upload_label: Upload files
     templates:
+      video: Default video template
+      video_description: |
+        Shows the embedded video.
       file: Default file download template
       file_description: |
         Shows the file name and some general information. Proxies downloads through php, allowing for statistics gathering and hotlink protection.

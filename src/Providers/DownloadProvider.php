@@ -8,6 +8,7 @@ use Flagrow\Upload\Helpers\Settings;
 use Flagrow\Upload\Templates\FileTemplate;
 use Flagrow\Upload\Templates\ImagePreviewTemplate;
 use Flagrow\Upload\Templates\ImageTemplate;
+use Flagrow\Upload\Templates\VideoTemplate;
 use Flarum\Foundation\AbstractServiceProvider;
 
 class DownloadProvider extends AbstractServiceProvider
@@ -30,5 +31,6 @@ class DownloadProvider extends AbstractServiceProvider
         $settings->addRenderTemplate($this->app->make(FileTemplate::class));
         $settings->addRenderTemplate($this->app->make(ImageTemplate::class));
         $settings->addRenderTemplate($this->app->make(ImagePreviewTemplate::class));
+        $settings->addRenderTemplate($this->app->make(VideoTemplate::class));
     }
 }
